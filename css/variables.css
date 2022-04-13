@@ -2,16 +2,21 @@
     --bg-color: #2b1200;
     --fg-color: #d38d5f;
 
+    --button-color-default: rgb(192, 33, 33);
+    --button-color-checked: rgb(22, 124, 76);
+
     /* Links */
     --link-fg-default: #d38d5f;
     --link-fg-hover: #d38d5f;
     --link-fg-visited: #d38d5f;
-    --link-fg-focus: #d38d5f;
-    
+    --link-fg-focus: #d38d5f;    
+    --link-bg-default: #d38d5f;
+    --link-bg-hover: #d38d5f;
+    --link-bg-visited: #d38d5f;
+    --link-bg-focus: #d38d5f;
 
     --nav-fontsize: 1.4em;
     
     --menu-bg: #8033bede;
     --menu-fg: #ededed;
-    --button-color: #ece8cc;
 }

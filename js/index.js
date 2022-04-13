@@ -140,13 +140,3 @@ var demo = (function(window, undefined) {
 
 // Kickstart Demo.
 window.onload = demo.init;
-
-
-// Bigmenu clicklistener
-var button = document.querySelector('button')
-
-button.addEventListener('click', togglebutton)
-
-function togglebutton() {
-    document.body.classList.toggle('open')
-}
