@@ -1,0 +1,17 @@
+:root {
+    --bg-color: #2b1200;
+    --fg-color: #d38d5f;
+
+    /* Links */
+    --link-fg-default: #d38d5f;
+    --link-fg-hover: #d38d5f;
+    --link-fg-visited: #d38d5f;
+    --link-fg-focus: #d38d5f;
+    
+
+    --nav-fontsize: 1.4em;
+    
+    --menu-bg: #8033bede;
+    --menu-fg: #ededed;
+    --button-color: #ece8cc;
+}
