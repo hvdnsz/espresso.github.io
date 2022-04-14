@@ -19,4 +19,6 @@
     
     --menu-bg: #8033bede;
     --menu-fg: #ededed;
+
+    --cards-layout-maxwidth: calc(1366px - 100px);
 }
