@@ -109,13 +109,15 @@ var Card = (function(window, undefined) {
 
       var rect = this._container.getBoundingClientRect();
       var windowW = window.innerWidth;
-
+      
+      // Get the card position on the viewport.
       var track = {
         width: 0,
         x: rect.left + (rect.width / 2),
         y: rect.top + (rect.height / 2),
       };
 
+      // Fix the container to the card position (start point).
       TL.set(this._container, {
         width: rect.width,
         height: rect.height,
@@ -125,6 +127,7 @@ var Card = (function(window, undefined) {
         overflow: 'hidden'
       });
 
+      // Tween the container (and the track values) to full screen (end point).
       TL.to([this._container, track], 2, {
         width: windowW,
         height: '100%',

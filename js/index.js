@@ -9,7 +9,6 @@ var demo = (function(window, undefined) {
    * Enum of CSS selectors.
    */
   var SELECTORS = {
-    pattern: '.pattern',
     card: '.card',
     cardImage: '.card__image',
     cardClose: '.card__btn-close',
