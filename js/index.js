@@ -66,6 +66,10 @@ var demo = (function(window, undefined) {
     // Prevent when card already open and user click on image.
     if (card.isOpen && isOpenClick) return;
 
+    // Prevent when card is filtered out
+    // (marked with opacity to avoid js button handlig)
+    if (card.des_opacity == 0.1) return;
+    
     // Create timeline for the whole sequence.
     var sequence = new TimelineLite({paused: true});
 

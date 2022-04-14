@@ -40,7 +40,7 @@
 }
 
 .card__container--closed .card__image {
-	cursor: pointer;
+	cursor: inherit;
 }
 
 .card__content {

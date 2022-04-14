@@ -32,6 +32,8 @@ var Card = (function(window, undefined) {
 
       this._el = el;
 
+      // "hidden" opacity
+      this.des_opacity = $(this._el).css('opacity')
       // Get elements.
       this._container = $(this._el).find(SELECTORS.container)[0];
       this._clip = $(this._el).find(SELECTORS.clip)[0];
@@ -218,10 +220,9 @@ var Card = (function(window, undefined) {
        * Show card, called for all cards except the selected one.
        */
     showCard() {
-
       var tween = TweenLite.to(this._el, 0.5, {
         scale: 1,
-        autoAlpha: 1,
+        autoAlpha: this.des_opacity,
         clearProps: 'all',
         ease: Expo.easeInOut
       });

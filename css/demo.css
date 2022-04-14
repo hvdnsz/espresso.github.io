@@ -5,16 +5,6 @@
 	box-sizing: border-box;
 }
 
-.clearfix:before,
-.clearfix:after {
-	content: '';
-	display: table;
-}
-
-.clearfix:after {
-	clear: both;
-}
-
 body {
 	font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
 	line-height: 1.5;
@@ -110,6 +100,7 @@ input[type="radio"] {
 /* Filter function itself */
 [value="All"]:checked ~ main .wrapper [data-category]  {
 	opacity: 1;
+	cursor: pointer;
 }
 [value="Pszihológia"]:checked ~ main .wrapper .card:not([data-category~="Pszihológia"]) ,
 [value="Interjú"]:checked ~ main .wrapper .card:not([data-category~="Interjú"]) ,
@@ -118,6 +109,7 @@ input[type="radio"] {
 [value="Nosztalgia/Retro"]:checked ~ main .wrapper .card:not([data-category~="Nosztalgia/Retro"]) ,
 [value="Frekventált_Lilu"]:checked ~ main .wrapper .card:not([data-category~="Frekventált_Lilu"])  {
 	opacity: 0.1;
+	cursor: auto;
 }
 
 @media screen and (max-width: 50em) {
