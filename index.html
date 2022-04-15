@@ -21,296 +21,321 @@
 	</script>
 </head>
 <body>
-	
 	<header>
 		<img src="img/espresso_negativ.png" alt="logo" id="logo">
+		<!-- Filter buttons -->
+		<ol id="filterBar">
+			<li>
+				<input type="radio" id="All" name="rovatok" value="All" checked>
+				<label for="All">All</label>
+			</li>
+			<li>
+				<input type="radio" id="Pszihológia" name="rovatok" value="Pszihológia">
+				<label for="Pszihológia">Pszihológia</label>
+			</li>
+			<li>
+			
+				<input type="radio" id="Interjú" name="rovatok" value="Interjú">
+				<label for="Interjú">Interjú</label>
+			</li>
+			<li>
+				
+				<input type="radio" id="Ajánló" name="rovatok" value="Ajánló">
+				<label for="Ajánló">Ajánló</label>
+			</li>
+			<li>
+			
+				<input type="radio" id="Travel" name="rovatok" value="Travel">
+				<label for="Travel">Travel</label>
+			</li>
+			<li>
+				
+				<input type="radio" id="Nosztalgia/Retro" name="rovatok" value="Nosztalgia/Retro">
+				<label for="Nosztalgia/Retro">Nosztalgia/Retro</label>
+			</li>
+			<li>
+			
+				<input type="radio" id="FrekventáltLilu" name="rovatok" value="FrekventáltLilu">
+				<label for="FrekventáltLilu">FrekventáltLilu</label>
+			</li>
+		</ol>
+		</nav>
 	</header>
 
-	<!-- CARDS -->
-	<div class="container">
-		<div class="content">
-			<!-- cards -->
-			<div class="wrapper">
-				<div class="card">
-					<div class="card__container card__container--closed">
-						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
-							<defs>
-								<clipPath id="clipPath1">
-									<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
-									<circle class="clip" cx="960" cy="250" r="992"></circle>
-								</clipPath>
-							</defs>
-							<image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="img/a.jpg"></image>
-						</svg>
-						<div class="card__content">
-							<i class="card__btn-close fa fa-times"></i>
-							<div class="card__caption">
-								<h2 class="card__title">Tristan and Isolde</h2>
-								<p class="card__subtitle">A modern day love story</p>
+	<main>
+		<!-- cards -->
+		<div class="wrapper">
+			<div class="card" data-category="Pszihológia">
+				<div class="card__container card__container--closed">
+					<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+						<defs>
+							<clipPath id="clipPath1">
+								<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
+								<circle class="clip" cx="960" cy="250" r="992"></circle>
+							</clipPath>
+						</defs>
+						<image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="img/a.jpg"></image>
+					</svg>
+					<div class="card__content">
+						<i class="card__btn-close fa fa-times"></i>
+						<div class="card__caption">
+							<h2 class="card__title">Tristan and Isolde</h2>
+							<p class="card__subtitle">A modern day love story</p>
+						</div>
+						<div class="card__copy">
+							<div class="meta">
+								<img class="meta__avatar" src="img/authors/1.png" alt="author01" />
+								<span class="meta__author">Gerry Sutherland</span>
+								<span class="meta__date">06/19/2015</span>
 							</div>
-							<div class="card__copy">
-								<div class="meta">
-									<img class="meta__avatar" src="img/authors/1.png" alt="author01" />
-									<span class="meta__author">Gerry Sutherland</span>
-									<span class="meta__date">06/19/2015</span>
-								</div>
-								<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
-								<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
-								<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
-								<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
-								<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
-								<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
-							</div>
+							<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
+							<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
+							<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
+							<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
+							<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
+							<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
 						</div>
 					</div>
 				</div>
-				<div class="card">
-					<div class="card__container card__container--closed">
-						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
-							<defs>
-								<clipPath id="clipPath2">
-									<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
-									<circle class="clip" cx="960" cy="250" r="992"></circle>
-								</clipPath>
-							</defs>
-							<image clip-path="url(#clipPath2)" width="1920" height="500" xlink:href="img/b.jpg"></image>
-						</svg>
-						<div class="card__content">
-							<i class="card__btn-close fa fa-times"></i>
-							<div class="card__caption">
-								<h2 class="card__title">About Helen</h2>
-								<p class="card__subtitle">A story about a woman</p>
+			</div>
+			<div class="card" data-category="Ajánló">
+				<div class="card__container card__container--closed">
+					<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+						<defs>
+							<clipPath id="clipPath2">
+								<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
+								<circle class="clip" cx="960" cy="250" r="992"></circle>
+							</clipPath>
+						</defs>
+						<image clip-path="url(#clipPath2)" width="1920" height="500" xlink:href="img/b.jpg"></image>
+					</svg>
+					<div class="card__content">
+						<i class="card__btn-close fa fa-times"></i>
+						<div class="card__caption">
+							<h2 class="card__title">About Helen</h2>
+							<p class="card__subtitle">A story about a woman</p>
+						</div>
+						<div class="card__copy">
+							<div class="meta">
+								<img class="meta__avatar" src="img/authors/2.png" alt="author02" />
+								<span class="meta__author">Frank Posterius</span>
+								<span class="meta__date">06/16/2015</span>
 							</div>
-							<div class="card__copy">
-								<div class="meta">
-									<img class="meta__avatar" src="img/authors/2.png" alt="author02" />
-									<span class="meta__author">Frank Posterius</span>
-									<span class="meta__date">06/16/2015</span>
-								</div>
-								<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
-								<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
-								<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
-								<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
-								<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
-								<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
-							</div>
+							<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
+							<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
+							<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
+							<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
+							<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
+							<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
 						</div>
 					</div>
 				</div>
-				<div class="card">
-					<div class="card__container card__container--closed">
-						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
-							<defs>
-								<clipPath id="clipPath3">
-									<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
-									<circle class="clip" cx="960" cy="250" r="992"></circle>
-								</clipPath>
-							</defs>
-							<image clip-path="url(#clipPath3)" width="1920" height="500" xlink:href="img/c.jpg"></image>
-						</svg>
-						<div class="card__content">
-							<i class="card__btn-close fa fa-times"></i>
-							<div class="card__caption">
-								<h2 class="card__title">A mild winter</h2>
-								<p class="card__subtitle">Helen's view on wells</p>
+			</div>
+			<div class="card" data-category="Travel">
+				<div class="card__container card__container--closed">
+					<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+						<defs>
+							<clipPath id="clipPath3">
+								<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
+								<circle class="clip" cx="960" cy="250" r="992"></circle>
+							</clipPath>
+						</defs>
+						<image clip-path="url(#clipPath3)" width="1920" height="500" xlink:href="img/c.jpg"></image>
+					</svg>
+					<div class="card__content">
+						<i class="card__btn-close fa fa-times"></i>
+						<div class="card__caption">
+							<h2 class="card__title">A mild winter</h2>
+							<p class="card__subtitle">Helen's view on wells</p>
+						</div>
+						<div class="card__copy">
+							<div class="meta">
+								<img class="meta__avatar" src="img/authors/3.png" alt="author03" />
+								<span class="meta__author">Sarah Lester</span>
+								<span class="meta__date">06/16/2015</span>
 							</div>
-							<div class="card__copy">
-								<div class="meta">
-									<img class="meta__avatar" src="img/authors/3.png" alt="author03" />
-									<span class="meta__author">Sarah Lester</span>
-									<span class="meta__date">06/16/2015</span>
-								</div>
-								<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
-								<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
-								<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
-								<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
-								<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
-								<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
-							</div>
+							<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
+							<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
+							<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
+							<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
+							<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
+							<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
 						</div>
 					</div>
 				</div>
-				<div class="card">
-					<div class="card__container card__container--closed">
-						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
-							<defs>
-								<clipPath id="clipPath4">
-									<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
-									<circle class="clip" cx="960" cy="250" r="992"></circle>
-								</clipPath>
-							</defs>
-							<image clip-path="url(#clipPath4)" width="1920" height="500" xlink:href="img/d.jpg"></image>
-						</svg>
-						<div class="card__content">
-							<i class="card__btn-close fa fa-times"></i>
-							<div class="card__caption">
-								<h2 class="card__title">Food sources</h2>
-								<p class="card__subtitle">What will we eat in 30 years?</p>
+			</div>
+			<div class="card" data-category="Travel">
+				<div class="card__container card__container--closed">
+					<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+						<defs>
+							<clipPath id="clipPath4">
+								<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
+								<circle class="clip" cx="960" cy="250" r="992"></circle>
+							</clipPath>
+						</defs>
+						<image clip-path="url(#clipPath4)" width="1920" height="500" xlink:href="img/d.jpg"></image>
+					</svg>
+					<div class="card__content">
+						<i class="card__btn-close fa fa-times"></i>
+						<div class="card__caption">
+							<h2 class="card__title">Food sources</h2>
+							<p class="card__subtitle">What will we eat in 30 years?</p>
+						</div>
+						<div class="card__copy">
+							<div class="meta">
+								<img class="meta__avatar" src="img/authors/4.png" alt="author04" />
+								<span class="meta__author">Lena Bestofos</span>
+								<span class="meta__date">06/14/2015</span>
 							</div>
-							<div class="card__copy">
-								<div class="meta">
-									<img class="meta__avatar" src="img/authors/4.png" alt="author04" />
-									<span class="meta__author">Lena Bestofos</span>
-									<span class="meta__date">06/14/2015</span>
-								</div>
-								<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
-								<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
-								<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
-								<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
-								<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
-								<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
-							</div>
+							<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
+							<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
+							<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
+							<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
+							<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
+							<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
 						</div>
 					</div>
 				</div>
-				<div class="card">
-					<div class="card__container card__container--closed">
-						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
-							<defs>
-								<clipPath id="clipPath5">
-									<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
-									<circle class="clip" cx="960" cy="250" r="992"></circle>
-								</clipPath>
-							</defs>
-							<image clip-path="url(#clipPath5)" width="1920" height="500" xlink:href="img/e.jpg"></image>
-						</svg>
-						<div class="card__content">
-							<i class="card__btn-close fa fa-times"></i>
-							<div class="card__caption">
-								<h2 class="card__title">Swimming in the ocean</h2>
-								<p class="card__subtitle">A Makrel's story</p>
-							</div>
-							<div class="card__copy">
-								<div class="meta">
-									<img class="meta__avatar" src="img/authors/5.png" alt="author05" />
-									<span class="meta__author">Michaela Walters</span>
-									<span class="meta__date">06/11/2015</span>
-								</div>
-								<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
-								<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
-								<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
-								<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
-								<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
-								<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
-							</div>
+			</div>
+			<div class="card" data-category="FrekventáltLilu">
+				<div class="card__container card__container--closed">
+					<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+						<defs>
+							<clipPath id="clipPath5">
+								<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
+								<circle class="clip" cx="960" cy="250" r="992"></circle>
+							</clipPath>
+						</defs>
+						<image clip-path="url(#clipPath5)" width="1920" height="500" xlink:href="img/e.jpg"></image>
+					</svg>
+					<div class="card__content">
+						<i class="card__btn-close fa fa-times"></i>
+						<div class="card__caption">
+							<h2 class="card__title">Swimming in the ocean</h2>
+							<p class="card__subtitle">A Makrel's story</p>
 						</div>
-					</div>
-				</div>	
-				<div class="card">
-					<div class="card__container card__container--closed">
-						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
-							<defs>
-								<clipPath id="clipPath6">
-									<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
-									<circle class="clip" cx="960" cy="250" r="992"></circle>
-								</clipPath>
-							</defs>
-							<image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="img/e.jpg"></image>
-						</svg>
-						<div class="card__content">
-							<i class="card__btn-close fa fa-times"></i>
-							<div class="card__caption">
-								<h2 class="card__title">Swimming in the ocean</h2>
-								<p class="card__subtitle">A Makrel's story</p>
+						<div class="card__copy">
+							<div class="meta">
+								<img class="meta__avatar" src="img/authors/5.png" alt="author05" />
+								<span class="meta__author">Michaela Walters</span>
+								<span class="meta__date">06/11/2015</span>
 							</div>
-							<div class="card__copy">
-								<div class="meta">
-									<img class="meta__avatar" src="img/authors/5.png" alt="author05" />
-									<span class="meta__author">Michaela Walters</span>
-									<span class="meta__date">06/11/2015</span>
-								</div>
-								<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
-								<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
-								<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
-								<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
-								<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
-								<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
-							</div>
+							<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
+							<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
+							<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
+							<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
+							<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
+							<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
 						</div>
 					</div>
 				</div>
-				<div class="card">
-					<div class="card__container card__container--closed">
-						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
-							<defs>
-								<clipPath id="clipPath7">
-									<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
-									<circle class="clip" cx="960" cy="250" r="992"></circle>
-								</clipPath>
-							</defs>
-							<image clip-path="url(#clipPath7)" width="1920" height="500" xlink:href="img/d.jpg"></image>
-						</svg>
-						<div class="card__content">
-							<i class="card__btn-close fa fa-times"></i>
-							<div class="card__caption">
-								<h2 class="card__title">Food sources</h2>
-								<p class="card__subtitle">What will we eat in 30 years?</p>
+			</div>	
+			<div class="card" data-category="Interjú">
+				<div class="card__container card__container--closed">
+					<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+						<defs>
+							<clipPath id="clipPath6">
+								<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
+								<circle class="clip" cx="960" cy="250" r="992"></circle>
+							</clipPath>
+						</defs>
+						<image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="img/e.jpg"></image>
+					</svg>
+					<div class="card__content">
+						<i class="card__btn-close fa fa-times"></i>
+						<div class="card__caption">
+							<h2 class="card__title">Swimming in the ocean</h2>
+							<p class="card__subtitle">A Makrel's story</p>
+						</div>
+						<div class="card__copy">
+							<div class="meta">
+								<img class="meta__avatar" src="img/authors/5.png" alt="author05" />
+								<span class="meta__author">Michaela Walters</span>
+								<span class="meta__date">06/11/2015</span>
 							</div>
-							<div class="card__copy">
-								<div class="meta">
-									<img class="meta__avatar" src="img/authors/4.png" alt="author04" />
-									<span class="meta__author">Lena Bestofos</span>
-									<span class="meta__date">06/14/2015</span>
-								</div>
-								<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
-								<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
-								<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
-								<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
-								<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
-								<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
-							</div>
+							<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
+							<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
+							<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
+							<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
+							<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
+							<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
 						</div>
 					</div>
 				</div>
-				<div class="card">
-					<div class="card__container card__container--closed">
-						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
-							<defs>
-								<clipPath id="clipPath8">
-									<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
-									<circle class="clip" cx="960" cy="250" r="992"></circle>
-								</clipPath>
-							</defs>
-							<image clip-path="url(#clipPath8)" width="1920" height="500" xlink:href="img/d.jpg"></image>
-						</svg>
-						<div class="card__content">
-							<i class="card__btn-close fa fa-times"></i>
-							<div class="card__caption">
-								<h2 class="card__title">Food sources</h2>
-								<p class="card__subtitle">What will we eat in 30 years?</p>
+			</div>
+			<div class="card" data-category="FrekventáltLilu">
+				<div class="card__container card__container--closed">
+					<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+						<defs>
+							<clipPath id="clipPath7">
+								<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
+								<circle class="clip" cx="960" cy="250" r="992"></circle>
+							</clipPath>
+						</defs>
+						<image clip-path="url(#clipPath7)" width="1920" height="500" xlink:href="img/d.jpg"></image>
+					</svg>
+					<div class="card__content">
+						<i class="card__btn-close fa fa-times"></i>
+						<div class="card__caption">
+							<h2 class="card__title">Food sources</h2>
+							<p class="card__subtitle">What will we eat in 30 years?</p>
+						</div>
+						<div class="card__copy">
+							<div class="meta">
+								<img class="meta__avatar" src="img/authors/4.png" alt="author04" />
+								<span class="meta__author">Lena Bestofos</span>
+								<span class="meta__date">06/14/2015</span>
 							</div>
-							<div class="card__copy">
-								<div class="meta">
-									<img class="meta__avatar" src="img/authors/4.png" alt="author04" />
-									<span class="meta__author">Lena Bestofos</span>
-									<span class="meta__date">06/14/2015</span>
-								</div>
-								<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
-								<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
-								<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
-								<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
-								<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
-								<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
-							</div>
+							<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
+							<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
+							<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
+							<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
+							<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
+							<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
 						</div>
 					</div>
 				</div>
-			<!-- /cards -->
+			</div>
+			<div class="card" data-category="Pszihológia">
+				<div class="card__container card__container--closed">
+					<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+						<defs>
+							<clipPath id="clipPath8">
+								<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
+								<circle class="clip" cx="960" cy="250" r="992"></circle>
+							</clipPath>
+						</defs>
+						<image clip-path="url(#clipPath8)" width="1920" height="500" xlink:href="img/d.jpg"></image>
+					</svg>
+					<div class="card__content">
+						<i class="card__btn-close fa fa-times"></i>
+						<div class="card__caption">
+							<h2 class="card__title">Food sources</h2>
+							<p class="card__subtitle">What will we eat in 30 years?</p>
+						</div>
+						<div class="card__copy">
+							<div class="meta">
+								<img class="meta__avatar" src="img/authors/4.png" alt="author04" />
+								<span class="meta__author">Lena Bestofos</span>
+								<span class="meta__date">06/14/2015</span>
+							</div>
+							<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
+							<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
+							<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
+							<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
+							<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
+							<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- /cards -->
 		</div>
-		<!-- /content -->
-	</div>
-	<!-- /container -->
+	</main>
 
-	<!-- <article>
-		<h1>This is an Article About Something</h1>
-		<h3>by Lauren Ipsum</h3>
-		<p><span>Toggle the menu by clicking on the infamous hamburger icon in the top left corner!  It could be the most fun you will ever have.</span></p>
-		<p>Maybe it was the other George Michael. You know, the singer-songwriter. This was a big get for God. I'm a scholar. I enjoy scholarly pursuits. Suddenly playing with yourself is a scholarly pursuit? Wow. We're just blowing through nap time, aren't we? I need a fake passport, preferably to France… I like the way they think. Butterscotch! Want a lick?</p>
-		<p>I made a huge tiny mistake. What's gotten into you? Have you been eating cheese? One of the guys told me to take my head out of my BOTTOM and get back to work…my BOTTOM! Hahahaha. Go ahead, touch the Cornballer. She's always got to wedge herself in the middle of us so that she can control everything. Yeah. Mom's awesome.</p>
-		<p>No, no, it's pronounced a-nal-ra-pist. It wasn't really the pronunciation that bothered me. Heyyyyyy, Uncle Father Oscar. Are you at all concerned about an uprising? I know what an erection feels like, Michael. We need a name. Maybe 'Operation Hot Mother'. A flower in my garden, a mystery in my panties. She's not that Mexican, Mom. She's my Mexican. And she's Columbian or something.</p>
-		<p>Well excuse me, Judge Reinhold. Well excuse me, Judge Reinhold! I could use a leather jacket for when I'm on my hog and have to go into a controlled slide. Happy. Family Love Michael. That's my son, you pothead! I'll sacrifice anything for my children. There's a new daddy in town. A discipline daddy.</p>
-		<p>I deceived you, mom. Tricked makes it sound like we have a playful relationship. That coat costs more than your house! I've got a nice hard cot with his name on it. You'd do that to your own brother? I said "cot." The only thing I found in the fridge was a dead dove in a bag. Gob: You didn't eat that, did you?</p>
-	</article> -->
+	<footer>
+		Ez itt a footer:)
+	</footer>
 	<script src="js/vendors/cash.min.js"></script>
 	<script src="js/vendors/ScrollToPlugin.min.js"></script>
 	<script src="js/vendors/TweenMax.min.js"></script>

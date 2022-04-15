@@ -38,6 +38,8 @@ var Card = (function(window, undefined) {
       this._content = $(this._el).find(SELECTORS.content)[0];
 
       this.isOpen = false;
+      this.isFiltered = true;
+      this.category = this._el.getAttribute('data-category')
 
       this._TL = null;
     }
@@ -109,13 +111,15 @@ var Card = (function(window, undefined) {
 
       var rect = this._container.getBoundingClientRect();
       var windowW = window.innerWidth;
-
+      
+      // Get the card position on the viewport.
       var track = {
         width: 0,
         x: rect.left + (rect.width / 2),
         y: rect.top + (rect.height / 2),
       };
 
+      // Fix the container to the card position (start point).
       TL.set(this._container, {
         width: rect.width,
         height: rect.height,
@@ -125,6 +129,7 @@ var Card = (function(window, undefined) {
         overflow: 'hidden'
       });
 
+      // Tween the container (and the track values) to full screen (end point).
       TL.to([this._container, track], 2, {
         width: windowW,
         height: '100%',
@@ -215,7 +220,6 @@ var Card = (function(window, undefined) {
        * Show card, called for all cards except the selected one.
        */
     showCard() {
-
       var tween = TweenLite.to(this._el, 0.5, {
         scale: 1,
         autoAlpha: 1,

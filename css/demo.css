@@ -5,16 +5,6 @@
 	box-sizing: border-box;
 }
 
-.clearfix:before,
-.clearfix:after {
-	content: '';
-	display: table;
-}
-
-.clearfix:after {
-	clear: both;
-}
-
 body {
 	font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
 	line-height: 1.5;
@@ -32,39 +22,16 @@ body.body--hidden {
 }
 
 body.body--hidden header,
-body.body--hidden #semantic_nav_wrapper {
+body.body--hidden input,
+body.body--hidden ol {
 	opacity: 0;
 }
 
-a {
-	text-decoration: none;
-	color: var(--link-fg-default);
-	outline: none;
-}
-
-a:hover {
-	color: var(--link-fg-hover);
-}
-a:focus {
-	color: var(--link-fg-focus);
-}
-
-.hidden *{
-	position: absolute;
-	overflow: hidden;
-	width: 0;
-	height: 0;
-	pointer-events: none;
-}
-
-
 /* Header */
-
 header {
     text-align: center;
     margin: 0 auto;
 }
-
 @media screen and (max-width: 50em) {
     header img {
         text-align: center;
@@ -75,56 +42,48 @@ header {
         
 }
 
-/* Navbars */
-#stickybar {
-	text-align: center;
+/* Filter navigation */
+input[type="radio"] {
+	display: none;
+	position: absolute;
+	left: -9999px;
+}
+#filterBar {
+	max-width: var(--cards-layout-maxwidth);
 	margin: 0 auto;
-	position: sticky;
-	top: 0;
-	background: var(--bg-color);
-  }
-  #stickybar ul {
-	display: inline-flex;
-	flex-flow: row nowrap;
-	justify-content: space-evenly;
-	align-items: center;
 	padding: 0;
-  }
-  #stickybar ul li {
+	text-align: center;
 	list-style: none;
-	padding: 0 2em;
-  }
-  #stickybar ul li a {
-	color: var(--nav-color);
-	font-size: var(--nav-fontsize);
-	text-decoration: none;
-	text-transform: capitalize;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
 }
-
-/* Content */
-
-.content {
-	padding: 1em 0 4em;
+#filterBar li {
+	padding: var(--filter-padding);
 }
-
-/* cards wrapper and close btn */
-
-.wrapper {
-	overflow: auto;
-	width: 95%;
-	max-width: 1366px;
-	margin: 0 auto;
+#filterBar li label {
+	font-size: var(--filter-fontsize);
+	line-height: normal;
+	cursor: pointer;
+	color: var(--filter-color-default)
+}
+#filterBar li input[name="rovatok"]:checked + label {
+	color: var(--filter-color-checked);
 }
 
 @media screen and (max-width: 50em) {
-	.codrops-header {
-		padding: 3em 10% 4em;
-	}
+	.filter--hidden {
+		display: none;
+	}	
 }
 
-@media screen and (max-width: 40em) {
-	.codrops-header h1 {
-		font-size: 2.4em;
-		line-height: 1.2;
-	}
+/* Container/Wrapper for closer card thumbnails */
+.wrapper {
+	overflow: auto;
+	/* width: 95%; */
+	max-width: var(--cards-layout-maxwidth);
+	margin: 0 auto;
 }

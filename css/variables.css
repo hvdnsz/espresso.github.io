@@ -1,17 +1,22 @@
 :root {
+    /* Main html */
     --bg-color: #2b1200;
     --fg-color: #d38d5f;
-
-    /* Links */
-    --link-fg-default: #d38d5f;
-    --link-fg-hover: #d38d5f;
-    --link-fg-visited: #d38d5f;
-    --link-fg-focus: #d38d5f;
     
-
-    --nav-fontsize: 1.4em;
+    /* Filter */
+    --filter-color-default: rgb(192, 33, 33);
+    --filter-color-checked: rgb(22, 124, 76);
+    --filter-fontsize: 1.6em;
+    --filter-padding: 0 1ex;
     
-    --menu-bg: #8033bede;
-    --menu-fg: #ededed;
-    --button-color: #ece8cc;
+    /* Articles */
+    --text-color: rgb(180, 40, 40);
+    --background-color: rgb(245, 241, 20);
+    --title-color: #3b393d;
+    --subtitle-color: #777778;
+
+    /* Misc */
+    --cards-layout-maxwidth: calc(1366px - 100px);
+    --title-color-closed: #fff;
+    --subtitle-color-closed: #f5f5f5;
 }
