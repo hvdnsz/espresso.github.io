@@ -222,7 +222,7 @@ var Card = (function(window, undefined) {
     showCard() {
       var tween = TweenLite.to(this._el, 0.5, {
         scale: 1,
-        autoAlpha: 1,
+        autoAlpha: (this.isFiltered ? 1 : 0.1),
         clearProps: 'all',
         ease: Expo.easeInOut
       });
