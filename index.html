@@ -23,30 +23,44 @@
 <body>
 	<header>
 		<img src="img/espresso_negativ.png" alt="logo" id="logo">
+		<!-- Filter buttons -->
+		<ol id="filterBar">
+			<li>
+				<input type="radio" id="All" name="rovatok" value="All" checked>
+				<label for="All">All</label>
+			</li>
+			<li>
+				<input type="radio" id="Pszihológia" name="rovatok" value="Pszihológia">
+				<label for="Pszihológia">Pszihológia</label>
+			</li>
+			<li>
+			
+				<input type="radio" id="Interjú" name="rovatok" value="Interjú">
+				<label for="Interjú">Interjú</label>
+			</li>
+			<li>
+				
+				<input type="radio" id="Ajánló" name="rovatok" value="Ajánló">
+				<label for="Ajánló">Ajánló</label>
+			</li>
+			<li>
+			
+				<input type="radio" id="Travel" name="rovatok" value="Travel">
+				<label for="Travel">Travel</label>
+			</li>
+			<li>
+				
+				<input type="radio" id="Nosztalgia/Retro" name="rovatok" value="Nosztalgia/Retro">
+				<label for="Nosztalgia/Retro">Nosztalgia/Retro</label>
+			</li>
+			<li>
+			
+				<input type="radio" id="FrekventáltLilu" name="rovatok" value="FrekventáltLilu">
+				<label for="FrekventáltLilu">FrekventáltLilu</label>
+			</li>
+		</ol>
+		</nav>
 	</header>
-
-	<!-- Had to be in the same level, since cant figure out how to encounter
-	the forced use of thie: ~ -->
-
-	<!-- Filter buttons -->
-	<input type="radio" id="All" name="categories" value="All" checked>
-    <input type="radio" id="Pszihológia" name="categories" value="Pszihológia">
-    <input type="radio" id="Interjú" name="categories" value="Interjú">
-    <input type="radio" id="Ajánló" name="categories" value="Ajánló">
-    <input type="radio" id="Travel" name="categories" value="Travel">
-    <input type="radio" id="Nosztalgia/Retro" name="categories" value="Nosztalgia/Retro">
-    <input type="radio" id="Frekventált_Lilu" name="categories" value="Frekventált_Lilu">
-
-    <!-- Filter labels -->
-	<ol class="filters">
-      	<li><label for="All">All</label></li>
-      	<li><label for="Pszihológia">Pszihológia</label></li>
-		<li><label for="Interjú">Interjú</label></li>
-		<li><label for="Ajánló">Ajánló</label></li>
-		<li><label for="Travel">Travel</label></li>
-		<li><label for="Nosztalgia/Retro">Nosztalgia/Retro</label></li>
-		<li><label for="Frekventált_Lilu">Frekventált Lilu</label></li>
-    </ol>
 
 	<main>
 		<!-- cards -->
@@ -183,7 +197,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="card" data-category="Frekventált_Lilu">
+			<div class="card" data-category="FrekventáltLilu">
 				<div class="card__container card__container--closed">
 					<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
 						<defs>
@@ -249,7 +263,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="card" data-category="Frekventált_Lilu">
+			<div class="card" data-category="FrekventáltLilu">
 				<div class="card__container card__container--closed">
 					<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
 						<defs>

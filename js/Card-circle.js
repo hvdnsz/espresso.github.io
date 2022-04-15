@@ -32,14 +32,14 @@ var Card = (function(window, undefined) {
 
       this._el = el;
 
-      // "hidden" opacity
-      this.des_opacity = $(this._el).css('opacity')
       // Get elements.
       this._container = $(this._el).find(SELECTORS.container)[0];
       this._clip = $(this._el).find(SELECTORS.clip)[0];
       this._content = $(this._el).find(SELECTORS.content)[0];
 
       this.isOpen = false;
+      this.isFiltered = true;
+      this.category = this._el.getAttribute('data-category')
 
       this._TL = null;
     }
@@ -222,7 +222,7 @@ var Card = (function(window, undefined) {
     showCard() {
       var tween = TweenLite.to(this._el, 0.5, {
         scale: 1,
-        autoAlpha: this.des_opacity,
+        autoAlpha: 1,
         clearProps: 'all',
         ease: Expo.easeInOut
       });

@@ -27,26 +27,11 @@ body.body--hidden ol {
 	opacity: 0;
 }
 
-a {
-	text-decoration: none;
-	color: var(--link-fg-default);
-	outline: none;
-}
-
-a:hover {
-	color: var(--link-fg-hover);
-}
-a:focus {
-	color: var(--link-fg-focus);
-}
-
-
 /* Header */
 header {
     text-align: center;
     margin: 0 auto;
 }
-
 @media screen and (max-width: 50em) {
     header img {
         text-align: center;
@@ -57,14 +42,13 @@ header {
         
 }
 
-
 /* Filter navigation */
-/* Visually hide radio button */
 input[type="radio"] {
+	display: none;
 	position: absolute;
 	left: -9999px;
 }
-.filters {
+#filterBar {
 	max-width: var(--cards-layout-maxwidth);
 	margin: 0 auto;
 	padding: 0;
@@ -77,53 +61,23 @@ input[type="radio"] {
 	align-items: center;
 	justify-content: space-evenly;
 }
-.filters li {
-	padding: 0 1ex;
+#filterBar li {
+	padding: var(--filter-padding);
 }
-.filters li label {
-	font-size: 1.5rem;
+#filterBar li label {
+	font-size: var(--filter-fontsize);
 	line-height: normal;
 	cursor: pointer;
-	color: var(--button-color-default)
+	color: var(--filter-color-default)
 }
-
-[value="All"]:checked ~ .filters [for="All"],
-[value="Pszihológia"]:checked ~ .filters [for="Pszihológia"],
-[value="Interjú"]:checked ~ .filters [for="Interjú"],
-[value="Ajánló"]:checked ~ .filters [for="Ajánló"],
-[value="Travel"]:checked ~ .filters [for="Travel"],
-[value="Nosztalgia/Retro"]:checked ~ .filters [for="Nosztalgia/Retro"],
-[value="Frekventált_Lilu"]:checked ~ .filters [for="Frekventált_Lilu"] {
-  color: var(--button-color-checked);
-}
-
-/* Filter function itself */
-[value="All"]:checked ~ main .wrapper [data-category]  {
-	opacity: 1;
-	cursor: pointer;
-}
-[value="Pszihológia"]:checked ~ main .wrapper .card:not([data-category~="Pszihológia"]) ,
-[value="Interjú"]:checked ~ main .wrapper .card:not([data-category~="Interjú"]) ,
-[value="Ajánló"]:checked ~ main .wrapper .card:not([data-category~="Ajánló"]) ,
-[value="Travel"]:checked ~ main .wrapper .card:not([data-category~="Travel"]) ,
-[value="Nosztalgia/Retro"]:checked ~ main .wrapper .card:not([data-category~="Nosztalgia/Retro"]) ,
-[value="Frekventált_Lilu"]:checked ~ main .wrapper .card:not([data-category~="Frekventált_Lilu"])  {
-	opacity: 0.1;
-	cursor: auto;
+#filterBar li input[name="rovatok"]:checked + label {
+	color: var(--filter-color-checked);
 }
 
 @media screen and (max-width: 50em) {
-	[value="All"]:checked ~ main .wrapper [data-category] {
-		display: auto;
-	}
-	[value="Pszihológia"]:checked ~ main .wrapper .card:not([data-category~="Pszihológia"]) ,
-	[value="Interjú"]:checked ~ main .wrapper .card:not([data-category~="Interjú"]) ,
-	[value="Ajánló"]:checked ~ main .wrapper .card:not([data-category~="Ajánló"]) ,
-	[value="Travel"]:checked ~ main .wrapper .card:not([data-category~="Travel"]) ,
-	[value="Nosztalgia/Retro"]:checked ~ main .wrapper .card:not([data-category~="Nosztalgia/Retro"]) ,
-	[value="Frekventált_Lilu"]:checked ~ main .wrapper .card:not([data-category~="Frekventált_Lilu"])  {
+	.filter--hidden {
 		display: none;
-	}
+	}	
 }
 
 /* Container/Wrapper for closer card thumbnails */

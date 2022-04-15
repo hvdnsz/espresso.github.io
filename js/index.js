@@ -19,13 +19,57 @@ var demo = (function(window, undefined) {
    */
   var layout = {};
 
+  // filterbutton container
+  const filterButtons = $('input[name="rovatok"]')
+  
   /**
    * Initialise demo.
    */
   function init() {
 
     _bindCards();
+    _setupFilters()
   };
+  
+  /**
+   * Set up filter filter filterButtons
+   * @private
+   */
+  function _setupFilters() {
+    
+    // prefilter after reload
+    var selectedRovat = document.querySelector('input[name="rovatok"]:checked').value;
+    _handleFiltering(selectedRovat)
+
+    // Bind radio buttons
+    $.each(filterButtons, function(filterbutton) {
+      $(filterbutton).on('change', _handleFiltering.bind(this, filterbutton.value));
+      // Just in case:)
+      $(filterbutton).on('click', _handleFiltering.bind(this, filterbutton.value));
+    });
+    
+  };
+
+  /**
+   * Handle hiding and unhiding filtered cards
+   * @private
+   */
+  function _handleFiltering(filter_value) {
+
+    for (var i in layout) {
+      var card = layout[i].card;
+      var cardCategory = card.category;
+      
+      if ((filter_value == 'All') || (filter_value == cardCategory)) {
+        card.isFiltered = true;
+        card._el.classList.remove('filter--hidden');
+        continue;
+      }
+
+      card.isFiltered = false;
+      card._el.classList.add('filter--hidden');
+    }
+  }
 
   /**
    * Bind Card elements.
@@ -59,17 +103,16 @@ var demo = (function(window, undefined) {
    * @private
    *
    */
-  function _playSequence(isOpenClick, id, e) {
+  function _playSequence(isOpenClick, id) {
 
     var card = layout[id].card;
 
     // Prevent when card already open and user click on image.
     if (card.isOpen && isOpenClick) return;
 
-    // Prevent when card is filtered out
-    // (marked with opacity to avoid js button handlig)
-    if (card.des_opacity == 0.1) return;
-    
+    // Prevent when card is filtered OUT
+    if (!card.isFiltered) return;
+
     // Create timeline for the whole sequence.
     var sequence = new TimelineLite({paused: true});
 
@@ -143,3 +186,13 @@ var demo = (function(window, undefined) {
 
 // Kickstart Demo.
 window.onload = demo.init;
+
+
+// var body = document.getElementsByClassName('wrapper')[0]
+// console.log(body);
+// body.classList.add('sokvagyok')
+// console.log(body);
+// body.classList.add('sokvagyok')
+// console.log(body);
+// body.classList.add('sokvagyok')
+// console.log(body);
