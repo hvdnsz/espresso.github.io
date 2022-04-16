@@ -62,7 +62,7 @@ input[type="radio"] {
 	justify-content: space-evenly;
 }
 #filterBar li {
-	padding: var(--filter-padding);
+	margin: var(--filter-margin);
 }
 #filterBar li label {
 	font-size: var(--filter-fontsize);

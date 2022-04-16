@@ -7,7 +7,7 @@
     --filter-color-default: rgb(192, 33, 33);
     --filter-color-checked: rgb(22, 124, 76);
     --filter-fontsize: 1.6em;
-    --filter-padding: 0 1ex;
+    --filter-margin: 0.5rem 00.7rem;
     
     /* Articles */
     --text-color: rgb(180, 40, 40);
