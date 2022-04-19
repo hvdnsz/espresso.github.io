@@ -21,16 +21,15 @@ body.body--hidden {
 	overflow: hidden;
 }
 
-body.body--hidden header,
-body.body--hidden input,
-body.body--hidden ol {
-	opacity: 0;
-}
-
 /* Header */
 header {
     text-align: center;
     margin: 0 auto;
+}
+/* Reduce CLS (i.e. commutative layout shift */
+header img {
+	height: 308px;
+	width: 790px;
 }
 @media screen and (max-width: 50em) {
     header img {
@@ -63,10 +62,10 @@ input[type="radio"] {
 }
 #filterBar li {
 	margin: var(--filter-margin);
+	font-size: var(--filter-fontsize);
 }
 #filterBar li label {
-	font-size: var(--filter-fontsize);
-	line-height: normal;
+	/* line-height: normal; */
 	cursor: pointer;
 	color: var(--filter-color-default)
 }

@@ -21,7 +21,10 @@ var demo = (function(window, undefined) {
 
   // filterbutton container
   const filterButtons = $('input[name="rovatok"]')
-  
+  // header container
+  const header = $('header')
+  console.log(header);
+
   /**
    * Initialise demo.
    */
@@ -123,6 +126,7 @@ var demo = (function(window, undefined) {
 
       sequence.add(tweenOtherCards);
       sequence.add(card.openCard(_onCardMove), 0);
+      sequence.add(_showHideHeader(true), 0);
 
     } else {
       // Close sequence.
@@ -132,6 +136,7 @@ var demo = (function(window, undefined) {
 
       sequence.add(closeCard);
       sequence.add(tweenOtherCards, position);
+      sequence.add(_showHideHeader(false), position);
     }
     sequence.play();
   };
@@ -164,6 +169,25 @@ var demo = (function(window, undefined) {
 
     return TL;
   };
+
+  /**
+   * Show/Hide header
+   * @param {boolean} isHide Flag to determine if hide or show header.
+   * @private
+   */
+  function _showHideHeader (isHide) {
+
+    var TL = new TimelineLite()
+
+    TL.to(header, 0.4, {
+      scale: (isHide ? 0.8 : 1),
+      autoAlpha: (isHide ? 0 : 1),
+      transformOrigin: 'center bottom',
+      ease: Expo.easeInOut
+    });
+
+    return TL
+  }
 
   /**
    * Callback to be executed on Tween update, whatever a polygon
