@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 :root {
     /* Main html */
     --bg-color: #2b1200;
@@ -10,6 +12,7 @@
     --filter-margin: 0.5rem 00.7rem;
     
     /* Articles */
+    --font-article: 'Roboto', sans-serif;
     --text-color: rgb(180, 40, 40);
     --background-color: rgb(245, 241, 20);
     --title-color: #3b393d;

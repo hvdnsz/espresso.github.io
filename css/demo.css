@@ -17,10 +17,6 @@ body {
 	overflow-y: scroll;
 }
 
-body.body--hidden {
-	overflow: hidden;
-}
-
 /* Header */
 header {
     text-align: center;
@@ -28,12 +24,12 @@ header {
 }
 /* Reduce CLS (i.e. commutative layout shift */
 header img {
+	text-align: center;
 	height: 308px;
 	width: 790px;
 }
 @media screen and (max-width: 50em) {
     header img {
-        text-align: center;
         margin: 0 auto;
         width: 100%;
         height: auto;

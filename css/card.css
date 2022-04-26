@@ -44,6 +44,7 @@
 }
 
 .card__content {
+	font-family: var(--font-article);
 	position: relative;
 	width: 100%;
 	height: auto;

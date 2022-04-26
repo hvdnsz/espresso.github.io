@@ -31,47 +31,15 @@ var demo = (function(window, undefined) {
   function init() {
 
     _bindCards();
-    _setupFilters()
+    _bindFilters()
   };
   
   /**
    * Set up filter filter filterButtons
    * @private
    */
-  function _setupFilters() {
+  function _bindFilters() {
     
-    // prefilter after reload
-    var selectedRovat = document.querySelector('input[name="rovatok"]:checked').value;
-    _handleFiltering(selectedRovat)
-
-    // Bind radio buttons
-    $.each(filterButtons, function(filterbutton) {
-      $(filterbutton).on('change', _handleFiltering.bind(this, filterbutton.value));
-      // Just in case:)
-      $(filterbutton).on('click', _handleFiltering.bind(this, filterbutton.value));
-    });
-    
-  };
-
-  /**
-   * Handle hiding and unhiding filtered cards
-   * @private
-   */
-  function _handleFiltering(filter_value) {
-
-    for (var i in layout) {
-      var card = layout[i].card;
-      var cardCategory = card.category;
-      
-      if ((filter_value == 'All') || (filter_value == cardCategory)) {
-        card.isFiltered = true;
-        card._el.classList.remove('filter--hidden');
-        continue;
-      }
-
-      card.isFiltered = false;
-      card._el.classList.add('filter--hidden');
-    }
   }
 
   /**
@@ -82,7 +50,7 @@ var demo = (function(window, undefined) {
 
     var elements = $(SELECTORS.card);
 
-    $.each(elements, function(card, i) {
+    $(elements).each(function(i, card) {
 
       var instance = new Card(i, card);
 
@@ -125,7 +93,8 @@ var demo = (function(window, undefined) {
       // Open sequence.
 
       sequence.add(tweenOtherCards);
-      sequence.add(card.openCard(_onCardMove), 0);
+      sequence.set('body', {overflowY: 'hidden'})
+      sequence.add(card.openCard(), 0);
       sequence.add(_showHideHeader(true), 0);
 
     } else {
@@ -136,6 +105,7 @@ var demo = (function(window, undefined) {
 
       sequence.add(closeCard);
       sequence.add(tweenOtherCards, position);
+      sequence.set('body', {overflowY: 'auto'}, position)
       sequence.add(_showHideHeader(false), position);
     }
     sequence.play();
@@ -188,18 +158,6 @@ var demo = (function(window, undefined) {
 
     return TL
   }
-
-  /**
-   * Callback to be executed on Tween update, whatever a polygon
-   * falls into a circular area defined by the card width the path's
-   * CSS class will change accordingly.
-   * @param {Object} track The card sizes and position during the floating.
-   * @private
-   */
-  function _onCardMove(track) {
-    // not implemented
-  }
-
 
   // Expose methods.
   return {

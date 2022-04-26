@@ -39,7 +39,7 @@ var Card = (function(window, undefined) {
 
       this.isOpen = false;
       this.isFiltered = true;
-      this.category = this._el.getAttribute('data-category')
+      this.category = $(this._el).attr('data-category')
 
       this._TL = null;
     }
@@ -47,13 +47,13 @@ var Card = (function(window, undefined) {
        * Open card.
        * @param {Function} callback The callback `onCardMove`.
        */
-    openCard(callback) {
+    openCard() {
 
       this._TL = new TimelineLite;
 
       var slideContentDown = this._slideContentDown();
       var clipImageIn = this._clipImageIn();
-      var floatContainer = this._floatContainer(callback);
+      var floatContainer = this._floatContainer();
       var clipImageOut = this._clipImageOut();
       var slideContentUp = this._slideContentUp();
 
@@ -103,7 +103,7 @@ var Card = (function(window, undefined) {
        * @param {Function} callback The callback `onCardMove`.
        * @private
        */
-    _floatContainer(callback) {
+    _floatContainer() {
 
       $(document.body).addClass(CLASSES.bodyHidden);
 
@@ -139,7 +139,6 @@ var Card = (function(window, undefined) {
         ease: Expo.easeInOut,
         clearProps: 'all',
         className: '-=' + CLASSES.containerClosed,
-        onUpdate: callback.bind(this, track)
       });
 
       return TL;
@@ -230,7 +229,6 @@ var Card = (function(window, undefined) {
       return tween;
     }
   };
-
 
 
   return Card;
