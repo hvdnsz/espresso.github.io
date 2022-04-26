@@ -19,19 +19,18 @@ var demo = (function(window, undefined) {
    */
   var layout = {};
 
-  // filterbutton container
-  const filterButtons = $('input[name="rovatok"]')
-  // header container
-  const header = $('header')
-  console.log(header);
-
   /**
    * Initialise demo.
    */
   function init() {
 
+    // init/bind event listeners
     _bindCards();
     _bindFilters()
+
+    // do the first filter
+    var chosenRovat = $('input[name="rovatok"]:checked')[0].value
+    _handleFiltering(chosenRovat)
   };
   
   /**
@@ -39,7 +38,30 @@ var demo = (function(window, undefined) {
    * @private
    */
   function _bindFilters() {
-    
+    $('input[name="rovatok"]').each(function(_, btn) {
+      $(btn).on('change', _handleFiltering.bind(this, btn.value))
+    });
+  }
+
+  /**
+   * Handle hiding and unhiding filtered cards
+   * @private
+   */
+   function _handleFiltering(filter_value) {
+
+    for (var i in layout) {
+      var card = layout[i].card;
+      var cardCategory = card.category;
+      
+      if ((filter_value == 'Összes') || (filter_value == cardCategory)) {
+        card.isFiltered = true;
+        card._el.classList.remove('filter--hidden');
+        continue;
+      }
+
+      card.isFiltered = false;
+      card._el.classList.add('filter--hidden');
+    }
   }
 
   /**
@@ -149,7 +171,7 @@ var demo = (function(window, undefined) {
 
     var TL = new TimelineLite()
 
-    TL.to(header, 0.4, {
+    TL.to('header', 0.4, {
       scale: (isHide ? 0.8 : 1),
       autoAlpha: (isHide ? 0 : 1),
       transformOrigin: 'center bottom',

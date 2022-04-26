@@ -60,10 +60,12 @@ input[type="radio"] {
 	margin: var(--filter-margin);
 	font-size: var(--filter-fontsize);
 }
-#filterBar li label {
+#filterBar li label,
+#filterBar li a {
 	/* line-height: normal; */
 	cursor: pointer;
-	color: var(--filter-color-default)
+	color: var(--filter-color-default);
+	text-decoration: none;
 }
 #filterBar li input[name="rovatok"]:checked + label {
 	color: var(--filter-color-checked);
