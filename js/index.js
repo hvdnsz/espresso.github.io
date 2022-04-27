@@ -29,8 +29,8 @@ var demo = (function(window, undefined) {
     _bindFilters()
 
     // do the first filter
-    var chosenRovat = $('input[name="rovatok"]:checked')[0].value
-    _handleFiltering(chosenRovat)
+    var chosenRovat = $('input[name="rovatok"]:checked')[0].value;
+    _handleFiltering(chosenRovat);
   };
   
   /**
@@ -85,6 +85,7 @@ var demo = (function(window, undefined) {
 
       $(cardImage).on('click', _playSequence.bind(this, true, i));
       $(cardClose).on('click', _playSequence.bind(this, false, i));
+
     });
   };
 
@@ -130,6 +131,7 @@ var demo = (function(window, undefined) {
       sequence.set('body', {overflowY: 'auto'}, position)
       sequence.add(_showHideHeader(false), position);
     }
+    
     sequence.play();
   };
 
