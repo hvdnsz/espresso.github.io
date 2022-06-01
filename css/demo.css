@@ -9,7 +9,9 @@ body {
 	font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	color: var(--fg-color);
-	background: var(--bg-color);
+	/* /* background: rgb(245,245,220); */
+	background: linear-gradient(180deg, #fff8f3, #bb843b);
+	/* background: linear-gradient(180deg, #542510, #bb843b); */
 	background-size: cover;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -25,24 +27,33 @@ header {
 /* Reduce CLS (i.e. commutative layout shift */
 header img {
 	text-align: center;
-	height: 308px;
-	width: 790px;
+	height: 206px;
+	width: 638px;
+	padding: 1em;
+	padding-bottom: 0;
 }
 @media screen and (max-width: 50em) {
     header img {
-        margin: 0 auto;
+        /* margin: 0 auto; */
         width: 100%;
-        height: auto;
+        height: 100%;
     }
         
 }
 
 /* Filter navigation */
+nav {
+	margin: 0 auto;
+	padding: 0 2rem;
+	text-align: center;
+}
+/* Hide radio buttons */
 input[type="radio"] {
 	display: none;
 	position: absolute;
 	left: -9999px;
 }
+
 #filterBar {
 	max-width: var(--cards-layout-maxwidth);
 	margin: 0 auto;
@@ -71,10 +82,11 @@ input[type="radio"] {
 	color: var(--filter-color-checked);
 }
 
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 806px) {
 	.filter--hidden {
 		display: none;
-	}	
+	}
+	/* #filterBar li { font-size: 1.1rem} */
 }
 
 /* Container/Wrapper for closer card thumbnails */
@@ -82,5 +94,6 @@ input[type="radio"] {
 	overflow: auto;
 	/* width: 95%; */
 	max-width: var(--cards-layout-maxwidth);
+	/* padding: 0 2rem; */
 	margin: 0 auto;
 }

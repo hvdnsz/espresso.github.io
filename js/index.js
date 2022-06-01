@@ -50,17 +50,21 @@ var demo = (function(window, undefined) {
    function _handleFiltering(filter_value) {
 
     for (var i in layout) {
+      var TL = new TimelineLite()
+
       var card = layout[i].card;
       var cardCategory = card.category;
       
       if ((filter_value == 'Összes') || (filter_value == cardCategory)) {
         card.isFiltered = true;
-        card._el.classList.remove('filter--hidden');
+        TL.add(card.toggleFade(), 0);
         continue;
       }
 
       card.isFiltered = false;
-      card._el.classList.add('filter--hidden');
+      TL.add(card.toggleFade(), 0);
+
+      TL.play();
     }
   }
 

@@ -189,9 +189,6 @@
 }
 
 /* Filter */
-.filter--hidden {
-	opacity: 0.1;
-}
-.filter--hidden .card__container--closed .card__image {
+.filter--hidden .card__container--closed{
 	cursor: default;
 }

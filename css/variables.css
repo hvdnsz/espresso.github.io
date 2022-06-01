@@ -13,8 +13,8 @@
     
     /* Articles */
     --font-article: 'Roboto', sans-serif;
-    --text-color: rgb(180, 40, 40);
-    --background-color: rgb(245, 241, 20);
+    --text-color: rgb(43, 17, 2);
+    --background-color: linear-gradient(180deg, rgba(245,245,220,1) 0%, rgba(207,185,151,1) 100%);
     --title-color: #3b393d;
     --subtitle-color: #777778;
 

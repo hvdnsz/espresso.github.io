@@ -19,7 +19,8 @@ var Card = (function(window, undefined) {
    */
   var CLASSES = {
     containerClosed: 'card__container--closed',
-    bodyHidden: 'body--hidden'
+    bodyHidden: 'body--hidden',
+    filterHidden: 'filter--hidden'
   };
 
   /**
@@ -227,6 +228,45 @@ var Card = (function(window, undefined) {
       });
 
       return tween;
+    }
+
+    /**
+     * Fade in card, called for all cards filtered
+     */
+    fadeInCard() {
+      var tween = TweenLite.to(this._el, 0.5, {
+        autoAlpha: 0.1,
+        ease: Expo.easeInOut
+      });
+
+      return tween
+    }
+
+    /**
+     * Fade out card, called for all cards filtered
+     */
+     fadeOutCard() {
+      var tween = TweenLite.to(this._el, 0.5, {
+        autoAlpha: 0.1,
+        ease: Expo.easeInOut
+      });
+
+      return tween
+    }
+
+    toggleFade() {
+      if (this.isFiltered) {
+        $(this._el).removeClass(CLASSES.filterHidden);
+      } else {
+        ($(this._el).addClass(CLASSES.filterHidden));
+      };
+
+      var tween = TweenLite.to(this._el, 0.5, {
+        autoAlpha: (this.isFiltered ? 1 : 0.1),
+        ease: Expo.easeInOut,
+      });
+
+      return tween
     }
   };
 
