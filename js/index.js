@@ -26,7 +26,7 @@ var demo = (function(window, undefined) {
 
     // init/bind event listeners
     _bindCards();
-    _bindFilters()
+    _bindFilters();
 
     // do the first filter
     var chosenRovat = $('input[name="rovatok"]:checked')[0].value;
@@ -57,12 +57,12 @@ var demo = (function(window, undefined) {
       
       if ((filter_value == 'Összes') || (filter_value == cardCategory)) {
         card.isFiltered = true;
-        TL.add(card.toggleFade(), 0);
+        $(card._el).removeClass('filter--hidden')
         continue;
       }
 
       card.isFiltered = false;
-      TL.add(card.toggleFade(), 0);
+      $(card._el).addClass('filter--hidden')
 
       TL.play();
     }
@@ -89,7 +89,6 @@ var demo = (function(window, undefined) {
 
       $(cardImage).on('click', _playSequence.bind(this, true, i));
       $(cardClose).on('click', _playSequence.bind(this, false, i));
-
     });
   };
 
@@ -195,14 +194,83 @@ var demo = (function(window, undefined) {
 })(window);
 
 // Kickstart Demo.
-window.onload = demo.init;
+$(document).ready(function() {
+  demo.init()
+  var active = $('input[name="rovatok"]:checked')[0];
+  $(active).parents('li').addClass('active');
+  setUnderline();
+})
 
+// Navigation Line
+var nav = $(".navigation");
+var navLine = $(".navigation__line");
 
-// var body = document.getElementsByClassName('wrapper')[0]
-// console.log(body);
-// body.classList.add('sokvagyok')
-// console.log(body);
-// body.classList.add('sokvagyok')
-// console.log(body);
-// body.classList.add('sokvagyok')
-// console.log(body);
+var pos = 0;
+var wid = 0;
+
+function setUnderline() {
+  var active = $(".navigation .active");
+  if (active.length) {
+    pos = active[0].getBoundingClientRect().left;
+    wid = active[0].getBoundingClientRect().width;
+    navLine.css({
+      'left': active[0].offsetLeft + "px",
+      'width': wid + "px"
+    })
+  }
+}
+
+window.onresize = function() {
+  setUnderline()
+};
+
+$(".navigation ul li label").each((i, elem) => {
+  elem.onclick = function(e) {
+    // e.preventDefault();
+
+    var isActive = this.parentElement.classList.contains("active");
+    var isAnimate = nav.hasClass("animate");
+    if (!isActive && !isAnimate) {
+      nav.addClass("animate");
+
+      var _this = this;
+
+      $(".navigation ul li").each((i, e) => $(e).removeClass("active"));
+      
+      try {
+
+        var position = _this.parentElement.getBoundingClientRect();
+        var width = position.width;
+
+        if (position.x >= pos) {
+          navLine.css({"width": position.x - pos + width + "px"})
+          setTimeout(() => {
+            navLine.css({
+              "left": _this.parentElement.offsetLeft + "px",
+              "width": width + "px",
+              "transitionDuration": "150ms"
+            })
+            setTimeout(() => nav.removeClass("animate"), 150);
+            $(_this.parentElement).addClass("active");
+          }, 300);
+        } else {
+          navLine.css({
+            'width': pos - position.left + wid + "px",
+            'left': _this.parentElement.offsetLeft + "px"
+          })
+
+          setTimeout(() => {
+            navLine.css({
+              'width': width + "px",
+              'transitionDuration': "150px"
+            })
+            setTimeout(() => nav.removeClass("animate"), 150);
+            $(_this.parentElement).addClass("active");
+          }, 300);
+        }
+      } catch (e) {}
+      pos = position.left;
+      wid = width;
+    }
+  }
+});

@@ -5,14 +5,18 @@
 	box-sizing: border-box;
 }
 
+html {
+	/* /* background: rgb(245,245,220); */
+	background: linear-gradient(180deg, #fff8f3, #bb843b);
+	/* background: linear-gradient(180deg, #542510, #bb843b); */
+	/* background-size: cover; */
+	min-height: 100%;
+}
+
 body {
 	font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	color: var(--fg-color);
-	/* /* background: rgb(245,245,220); */
-	background: linear-gradient(180deg, #fff8f3, #bb843b);
-	/* background: linear-gradient(180deg, #542510, #bb843b); */
-	background-size: cover;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	overflow: hidden;
@@ -47,6 +51,7 @@ nav {
 	padding: 0 2rem;
 	text-align: center;
 }
+
 /* Hide radio buttons */
 input[type="radio"] {
 	display: none;
@@ -54,7 +59,7 @@ input[type="radio"] {
 	left: -9999px;
 }
 
-#filterBar {
+.navigation > ul {
 	max-width: var(--cards-layout-maxwidth);
 	margin: 0 auto;
 	padding: 0;
@@ -67,26 +72,70 @@ input[type="radio"] {
 	align-items: center;
 	justify-content: space-evenly;
 }
-#filterBar li {
+.navigation li {
 	margin: var(--filter-margin);
 	font-size: var(--filter-fontsize);
 }
-#filterBar li label,
-#filterBar li a {
-	/* line-height: normal; */
+#filterBar li label {
+	text-transform: uppercase;
 	cursor: pointer;
 	color: var(--filter-color-default);
 	text-decoration: none;
+	word-wrap: break-word;
 }
+
 #filterBar li input[name="rovatok"]:checked + label {
 	color: var(--filter-color-checked);
 }
 
+.navigation {
+	display: block;
+	text-align: center;
+}
+
+.navigation__list {
+	list-style: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.navigation__link {
+	word-wrap: break-word;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	/* font-size: 0.875rem; */
+	font-size: 1.0275rem;
+	font-weight: bold;
+	/* margin: 15px (20px * 2) 0 (20px * 2); */
+	position: relative;
+}
+
+.navigation__line {
+	height: 2px;
+	position: absolute;
+	bottom: 0;
+	margin: 10px 0 0 0;
+	background: red;
+	transition: all 1s;
+}
+@media screen and (max-width: 1012px) {
+	.navigation__line {
+		display: none;
+	}
+}
 @media screen and (max-width: 806px) {
+	.navigation__item {
+		font-size: 1vw;
+	}
+}
+
+@media screen and (max-width: 580px) {
 	.filter--hidden {
 		display: none;
 	}
-	/* #filterBar li { font-size: 1.1rem} */
 }
 
 /* Container/Wrapper for closer card thumbnails */
@@ -95,5 +144,9 @@ input[type="radio"] {
 	/* width: 95%; */
 	max-width: var(--cards-layout-maxwidth);
 	/* padding: 0 2rem; */
-	margin: 0 auto;
+	margin: 0 0;
+}
+
+.filter--hidden {
+	opacity: 0.1;
 }

@@ -255,12 +255,6 @@ var Card = (function(window, undefined) {
     }
 
     toggleFade() {
-      if (this.isFiltered) {
-        $(this._el).removeClass(CLASSES.filterHidden);
-      } else {
-        ($(this._el).addClass(CLASSES.filterHidden));
-      };
-
       var tween = TweenLite.to(this._el, 0.5, {
         autoAlpha: (this.isFiltered ? 1 : 0.1),
         ease: Expo.easeInOut,

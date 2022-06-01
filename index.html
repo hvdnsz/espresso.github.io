@@ -24,42 +24,61 @@
 <body>
 	<header>
 		<img src="img/espresso_negativ.png" alt="logo" id="logo">
-		<!-- Filter buttons -->
-		<nav>
-			<ul id="filterBar">
-				<li>
+		<nav class="navigation">
+			<ul class="navigation__list" id="filterBar">
+				<li class="navigation__item">
 					<input type="radio" id="Összes" name="rovatok" value="Összes" checked>
 					<label for="Összes">Összes</label>
 				</li>
-				<li>
+				<li class="navigation__item">
 					<input type="radio" id="Iskolánkról" name="rovatok" value="Iskolánkról">
 					<label for="Iskolánkról">Iskolánkról</label>
 				</li>
-				<li>
-				
+				<li class="navigation__item">
 					<input type="radio" id="Interjú" name="rovatok" value="Interjú">
 					<label for="Interjú">Interjú</label>
 				</li>
-				<li>
-					
+				<li class="navigation__item">
 					<input type="radio" id="Ajánló" name="rovatok" value="Ajánló">
 					<label for="Ajánló">Ajánló</label>
 				</li>
-				<li>
-				
+				<li class="navigation__item">
 					<input type="radio" id="Életmód" name="rovatok" value="Életmód">
 					<label for="Életmód">Életmód</label>
 				</li>
-				<li>
-					
+				<li class="navigation__item">
 					<input type="radio" id="Egyéb" name="rovatok" value="Egyéb">
 					<label for="Egyéb">Egyéb</label>
 				</li>
-				<li>
-					<a href="https://www.karinthy.hu/pages/news/karanthen/issue1/">Archív</a>
+				<li class="navigation__item">
+					<input type="radio" id="Archív" name="rovatok" value="Archív">
+					<label for="Archív">Archív</label>
 				</li>
+				<div class="navigation__line"></div>
 			</ul>
 		</nav>
+		<!-- Filter buttons -->
+		<!-- <nav class="navigation">
+			<ul class="navigation__list">
+			  <li class="navigation__item">
+				<a class="navigation__link active" href="#">Lorem ipsum</a>
+			  </li>
+			  <li class="navigation__item">
+				<a class="navigation__link" href="#">Dolor</a>
+			  </li>
+			  <li class="navigation__item">
+				<a class="navigation__link" href="#">Consectetur adipiscing</a>
+			  </li>
+			  <li class="navigation__item">
+				<a class="navigation__link" href="#">Donec ut</a>
+			  </li>
+			  <li class="navigation__item">
+				<a class="navigation__link" href="#">Placerat dignissim</a>
+			  </li>
+			  <div class="navigation__line"></div>
+			</ul>
+		  </nav> -->
+		
 	</header>
 
 	<main>
@@ -333,9 +352,6 @@
 		</div>
 	</main>
 
-	<footer>
-		Ez itt a footer:)
-	</footer>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/cash/8.1.1/cash.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/ScrollToPlugin.min.js"></script>

@@ -189,6 +189,11 @@
 }
 
 /* Filter */
-.filter--hidden .card__container--closed{
+.filter--hidden .card__container--closed {
 	cursor: default;
+}
+
+.card {
+	transition: opacity;
+	transition-duration: 150ms;
 }
