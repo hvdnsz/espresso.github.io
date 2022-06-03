@@ -45,6 +45,7 @@
 
 .card__content {
 	font-family: var(--font-article);
+	font-size: var(--font-size);
 	position: relative;
 	width: 100%;
 	height: auto;
