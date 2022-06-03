@@ -10,12 +10,7 @@
 }
 
 html {
-	/* /* background: rgb(245,245,220); */
-	background: linear-gradient(180deg, #fff8f3, #bb843b);
-	/* background: linear-gradient(180deg, #542510, #bb843b); */
-	/* background-size: cover; */
 	min-height: 100%;
-
 	background: rgb(255,248,243);
 	background: linear-gradient(180deg, rgba(255,248,243,1) 16%, rgba(237,221,201,1) 81%);
 }
