@@ -6,8 +6,8 @@
     --fg-color: #d38d5f;
     
     /* Filter */
-    --filter-color-default: rgb(192, 33, 33);
-    --filter-color-checked: rgb(22, 124, 76);
+    --filter-color-default: #5c2b06;
+    --filter-color-checked: #764309;
     --filter-fontsize: 1.6em;
     --filter-margin: 0.5rem 00.7rem;
     
@@ -24,6 +24,6 @@
     --subtitle-color-closed: #f5f5f5;
 
     /* Dont touch this yet */
-    --navline-color: #ff2400;
+    --navline-color: #5c2b06;
     --navline-height: 4px;
 }
