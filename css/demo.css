@@ -1,3 +1,7 @@
+@import url(normailze.css);
+@import url(variables.css);
+@import url(card.css);
+
 *,
 *:after,
 *:before {
@@ -98,10 +102,12 @@ input[type="radio"] {
 
 .navigation__list {
 	list-style: none;
-	display: inline-flex;
+	/* display: inline-flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: center; */
+	display: grid;
+	row-gap: var(--bubble-height-offset);
 	position: relative;
 }
 
@@ -118,7 +124,7 @@ input[type="radio"] {
 }
 
 .navigation__line {
-	height: 2px;
+	height: var(--navline-height);
 	position: absolute;
 	bottom: 0;
 	margin: 10px 0 0 0;
@@ -129,10 +135,84 @@ input[type="radio"] {
 	.navigation__line {
 		display: none;
 	}
+
+	.bubble {
+		position: relative;
+		display: inline-block;
+		/* min-width: 2.7em; */
+		text-align: center;
+		/* cursor: pointer; */
+	}
+	
+	.bubble span {
+		transition: color 0.3s ease-out;
+		color: inherit;
+	}
+	
+	.bubble:after,
+	.bubble:before,
+	.bubble span:before,
+	.bubble span:after {
+		position: absolute;
+		content: '';
+		border-radius: var(--navline-height);
+		background-color: red;
+	}
+	
+	.bubble:after,
+	.bubble:before {
+		bottom: -6px;
+		height: var(--navline-height);
+	}
+	
+	.bubble:after {
+		left: 0;
+		right: 39px;
+	}
+	
+	.bubble:before {
+		right: -2px;
+		width: 13px;
+	}
+	
+	.bubble span:before {
+		height: 0;
+		width: 4px;
+		bottom: -2px;
+		right: 7px;
+		transition: height .3s, bottom .3s;
+	}
+	
+	.bubble span:after {
+		height: 4px;
+		width: 34px;
+		bottom: -6px;
+		right: 8px;
+		transform: rotate(0deg);
+		transform-origin: left top;
+		transition: transform .3s, right .3s, width .3s;
+	}
+	
+	.active .bubble span:before {
+		height: 22px;
+		bottom: -24px;
+	}
+	
+	.active .bubble span:after {
+		right: 1px;
+		width: 40px;
+		transform: rotate(30deg);
+	}
+	
+	.active .bubble {
+		outline: 0;
+	}
 }
+
 @media screen and (max-width: 806px) {
 	.navigation__item {
 		font-size: 1vw;
+		font-size: 1.19em;
 	}
 }
 
@@ -158,6 +238,6 @@ input[type="radio"] {
 	margin: 0 auto;
 }
 
-.filter--hidden {
+/* .filter--hidden {
 	opacity: 0.1;
-}
+} */

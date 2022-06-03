@@ -57,11 +57,13 @@ var demo = (function(window, undefined) {
       
       if ((filter_value == 'Összes') || (filter_value == cardCategory)) {
         card.isFiltered = true;
+        TL.add(card.toggleFade(), 0)
         $(card._el).removeClass('filter--hidden')
         continue;
       }
 
       card.isFiltered = false;
+      TL.add(card.toggleFade(), 0)
       $(card._el).addClass('filter--hidden')
 
       TL.play();
@@ -196,6 +198,8 @@ var demo = (function(window, undefined) {
 // Kickstart Demo.
 $(document).ready(function() {
   demo.init()
+
+  // navigation line
   var active = $('input[name="rovatok"]:checked')[0];
   $(active).parents('li').addClass('active');
   setUnderline();

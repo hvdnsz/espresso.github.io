@@ -22,4 +22,7 @@
     --cards-layout-maxwidth: calc(1366px - 100px);
     --title-color-closed: #fff;
     --subtitle-color-closed: #f5f5f5;
+
+    --navline-height: 4px;
+    --bubble-height-offset: 24px;
 }

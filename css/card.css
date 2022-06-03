@@ -189,11 +189,10 @@
 }
 
 /* Filter */
-.filter--hidden .card__container--closed {
-	cursor: default;
-}
+.filter--hidden {opacity: 0.1}
+.filter--hidden .card__container--closed {cursor: default}
 
-.card {
+/* .card {
 	transition: opacity;
-	transition-duration: 150ms;
-}
+	transition-duration: 875ms;
+} */

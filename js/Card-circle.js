@@ -19,7 +19,6 @@ var Card = (function(window, undefined) {
    */
   var CLASSES = {
     containerClosed: 'card__container--closed',
-    bodyHidden: 'body--hidden',
     filterHidden: 'filter--hidden'
   };
 
@@ -105,8 +104,6 @@ var Card = (function(window, undefined) {
        * @private
        */
     _floatContainer() {
-
-      $(document.body).addClass(CLASSES.bodyHidden);
 
       var TL = new TimelineLite;
 
@@ -194,8 +191,6 @@ var Card = (function(window, undefined) {
           clearProps: 'all'
         });
 
-        $(document.body).removeClass(CLASSES.bodyHidden);
-
         this.isOpen = false;
 
       }.bind(this));
@@ -228,30 +223,6 @@ var Card = (function(window, undefined) {
       });
 
       return tween;
-    }
-
-    /**
-     * Fade in card, called for all cards filtered
-     */
-    fadeInCard() {
-      var tween = TweenLite.to(this._el, 0.5, {
-        autoAlpha: 0.1,
-        ease: Expo.easeInOut
-      });
-
-      return tween
-    }
-
-    /**
-     * Fade out card, called for all cards filtered
-     */
-     fadeOutCard() {
-      var tween = TweenLite.to(this._el, 0.5, {
-        autoAlpha: 0.1,
-        ease: Expo.easeInOut
-      });
-
-      return tween
     }
 
     toggleFade() {
