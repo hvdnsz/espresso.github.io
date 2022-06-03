@@ -30,6 +30,8 @@ body {
 	overflow-y: scroll;
 }
 
+main {	margin: 1vw auto}
+
 /* Header */
 header {
     text-align: center;
@@ -250,7 +252,6 @@ input[type="radio"] {
 	/* width: 95%; */
 	max-width: var(--cards-layout-maxwidth);
 	/* padding: 0 2rem; */
-	margin: 1vw auto;
 }
 
 /* .filter--hidden {
