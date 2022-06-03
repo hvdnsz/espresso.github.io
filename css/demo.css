@@ -33,7 +33,7 @@ body {
 /* Header */
 header {
     text-align: center;
-    margin: 0 auto;
+    margin: 1vh auto;
 }
 /* Reduce CLS (i.e. commutative layout shift */
 header img {
@@ -107,7 +107,7 @@ input[type="radio"] {
 	align-items: center;
 	justify-content: center; */
 	display: grid;
-	row-gap: var(--bubble-height-offset);
+	row-gap: 14px;
 	position: relative;
 }
 
@@ -128,9 +128,11 @@ input[type="radio"] {
 	position: absolute;
 	bottom: 0;
 	margin: 10px 0 0 0;
-	background: red;
+	background: var(--navline-color);
 	transition: all 1s;
 }
+
+/* Bubble navigation style */
 @media screen and (max-width: 1012px) {
 	.navigation__line {
 		display: none;
@@ -155,8 +157,8 @@ input[type="radio"] {
 	.bubble span:after {
 		position: absolute;
 		content: '';
-		border-radius: var(--navline-height);
-		background-color: red;
+		border-radius: 4px;
+		background-color: var(--navline-color);
 	}
 	
 	.bubble:after,
@@ -177,20 +179,20 @@ input[type="radio"] {
 	
 	.bubble span:before {
 		height: 0;
-		width: 4px;
+		width: var(--navline-height);
 		bottom: -2px;
 		right: 7px;
 		transition: height .3s, bottom .3s;
 	}
 	
 	.bubble span:after {
-		height: 4px;
+		height: var(--navline-height);
 		width: 34px;
 		bottom: -6px;
 		right: 8px;
 		transform: rotate(0deg);
 		transform-origin: left top;
-		transition: transform .3s, right .3s, width .3s;
+		transition: transform .3s, right .3s, width .3s, bottom .3s;
 	}
 	
 	.active .bubble span:before {
@@ -217,6 +219,7 @@ input[type="radio"] {
 }
 
 @media screen and (max-width: 580px) {
+
 	.filter--hidden {
 		display: none;
 	}
@@ -227,6 +230,18 @@ input[type="radio"] {
 		font-size: 0.95rem;
 	}
 
+	.active .bubble span:before {
+		height: 16px;
+		bottom: -18px;
+	}
+	
+	.active .bubble span:after {
+		right: 4px;
+		width: 37px;
+		transform: rotate(21deg);
+	}
+
+	.navigation__list {row-gap: 8px}
 }
 
 /* Container/Wrapper for closer card thumbnails */
@@ -235,7 +250,7 @@ input[type="radio"] {
 	/* width: 95%; */
 	max-width: var(--cards-layout-maxwidth);
 	/* padding: 0 2rem; */
-	margin: 0 auto;
+	margin: 1vw auto;
 }
 
 /* .filter--hidden {

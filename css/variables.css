@@ -23,6 +23,7 @@
     --title-color-closed: #fff;
     --subtitle-color-closed: #f5f5f5;
 
+    /* Dont touch this yet */
+    --navline-color: #ff2400;
     --navline-height: 4px;
-    --bubble-height-offset: 24px;
 }
