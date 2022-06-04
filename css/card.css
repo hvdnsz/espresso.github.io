@@ -101,15 +101,15 @@
 }
 
 .card__copy {
-	font-size: 1.25em;
+	font-size: 1.15em;
 	max-width: 900px;
 	margin: 0 auto;
 	padding: 25px 30px 100px;
 	color: var(--text-color);
 }
 
-.card__copy p:first-of-type {
-	font-size: 1.5em;
+.magnified_introduction p:first-of-type {
+	font-size: calc(1.15em * 1.1);
 	padding: 0 0 1em 0;
 }
 
@@ -153,8 +153,36 @@
 	margin: 0 0 0 auto;
 }
 
+/* Styling the articles */
+.card__container--closed article{
+	visibility: hidden;
+}
+
 .interview__question {
 	font-weight: bold;
+}
+
+.float_image__left,
+.float_image__rirght {
+	display: block;
+	line-height: 0;
+	margin: 0px;
+	
+	float: left;
+	margin-right: 1em;
+	margin-bottom: 1em;
+
+	max-width: 100%;
+	height: auto;
+}
+/* .float_image__right {
+	margin-right: 0;
+	margin-left: 2em;
+	float: right;
+} */
+
+.capitalize {
+	text-transform: capitalize;
 }
 
 @media only screen and (max-width: 980px) {
