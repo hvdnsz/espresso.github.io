@@ -8,8 +8,8 @@
     /* Filter */
     --filter-color-default: #5c2b06;
     --filter-color-checked: #764309;
-    --filter-fontsize: 1.6em;
-    --filter-margin: 0.5rem 00.7rem;
+    /* --filter-fontsize: 1.3875em;*/
+    --filter-fontsize: 1.6rem;
     
     /* Articles */
     --font-article: 'Roboto', sans-serif;

@@ -56,22 +56,6 @@ input[type="radio"] {
 	left: -9999px;
 }
 
-.navigation__item {
-	margin: var(--filter-margin);
-	font-size: var(--filter-fontsize);
-}
-.navigation__item label {
-	text-transform: uppercase;
-	cursor: pointer;
-	color: var(--filter-color-default);
-	text-decoration: none;
-	word-wrap: break-word;
-}
-
-.navigation input[name="rovatok"]:checked + label {
-	color: var(--filter-color-checked);
-}
-
 .navigation {
 	display: block;
 	text-align: center;
@@ -87,23 +71,29 @@ input[type="radio"] {
 	position: relative;
 
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-evenly;
-	row-gap: 14px;
+
+	float: none;
+	clear: both;
+	margin: 0 auto;
+	text-align: center;
+	justify-content: center;
 }
 
-.navigation__link {
-	word-wrap: break-word;
-	text-decoration: none;
+.navigation__item {
+	margin: 0.5rem 0.7rem;
+	font-size: var(--filter-fontsize);
+}
+.navigation__item label {
 	text-transform: uppercase;
-	letter-spacing: 1.5px;
-	/* font-size: 0.875rem; */
-	font-size: 1.0275rem;
-	font-weight: bold;
-	/* margin: 15px (20px * 2) 0 (20px * 2); */
-	position: relative;
+	cursor: pointer;
+	color: var(--filter-color-default);
+	text-decoration: none;
+}
+
+.navigation input[name="rovatok"]:checked + label {
+	color: var(--filter-color-checked);
 }
 
 .navigation__line {
