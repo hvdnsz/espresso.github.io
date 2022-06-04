@@ -73,6 +73,7 @@ input[type="radio"] {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	row-gap: 16px;
 
 	float: none;
 	clear: both;
@@ -105,8 +106,9 @@ input[type="radio"] {
 	transition: all 1s;
 }
 
-/* Bubble navigation style */
-@media screen and (max-width: 1012px) {
+/* Toggle expanding underline to teleporting */
+@media screen and (max-width: 1260px) {
+	:root {--filter-fontsize: 1.6rem}
 	.navigation__line {
 		display: none;
 	}
@@ -147,7 +149,14 @@ input[type="radio"] {
 		font-size: 1.19em;
 	}
 }
-
+@media screen and (max-width: 660px) {
+	.navigation__item {
+		margin: auto .675rem;
+	}
+}
+@media screen and (max-width: 590px) {
+	.navigation__item label {font-size: 1rem;}
+}
 @media screen and (max-width: 580px) {
 
 	.filter--hidden {
@@ -166,7 +175,16 @@ input[type="radio"] {
 
 	:root {--navline-height: 3px}
 }
-
+@media screen and (max-width: 375px) {
+	.navigation__item label {
+		font-size: .875rem;
+	}
+}
+@media screen and (max-width: 330px) {
+	.navigation__item label {
+		font-size: .75rem;
+	}
+}
 /* Container/Wrapper for closer card thumbnails */
 .wrapper {
 	overflow: auto;
