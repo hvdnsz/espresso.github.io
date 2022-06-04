@@ -55,7 +55,7 @@ var demo = (function(window, undefined) {
       var card = layout[i].card;
       var cardCategory = card.category;
       
-      if ((filter_value == 'Összes') || (filter_value == cardCategory)) {
+      if ((filter_value == 'mindenis') || (filter_value == cardCategory)) {
         card.isFiltered = true;
         TL.add(card.toggleFade(), 0)
         $(card._el).removeClass('filter--hidden')

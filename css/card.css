@@ -153,6 +153,10 @@
 	margin: 0 0 0 auto;
 }
 
+.interview__question {
+	font-weight: bold;
+}
+
 @media only screen and (max-width: 980px) {
 	.card {
 		width: 46%;

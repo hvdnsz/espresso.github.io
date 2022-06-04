@@ -24,32 +24,32 @@
 		<nav class="navigation">
 			<ul class="navigation__list" id="filterBar">
 				<li class="navigation__item">
-					<input type="radio" id="Összes" name="rovatok" value="Összes" checked>
-					<label class="bubble" for="Összes">Minden is</label>
+					<input type="radio" id="mindenis" name="rovatok" value="mindenis" checked>
+					<label class="bubble" for="mindenis">Minden is</label>
 				</li>
 				<li class="navigation__item">
-					<input type="radio" id="Iskolánkról" name="rovatok" value="Iskolánkról">
-					<label class="bubble" for="Iskolánkról">What's up KFG</label>
+					<input type="radio" id="whatsupkfg" name="rovatok" value="whatsupkfg">
+					<label class="bubble" for="whatsupkfg">What's up KFG</label>
 				</li>
 				<li class="navigation__item">
-					<input type="radio" id="Interjú" name="rovatok" value="Interjú">
-					<label class="bubble" for="Interjú">Kávé mellett</label>
+					<input type="radio" id="kavemellet" name="rovatok" value="kavemellet">
+					<label class="bubble" for="kavemellet">Kávé mellett</label>
 				</li>
 				<li class="navigation__item">
-					<input type="radio" id="Ajánló" name="rovatok" value="Ajánló">
-					<label class="bubble" for="Ajánló">Nekünk tetszett</label>
+					<input type="radio" id="nekunktetszett" name="rovatok" value="nekunktetszett">
+					<label class="bubble" for="nekunktetszett">Nekünk tetszett</label>
 				</li>
 				<li class="navigation__item">
-					<input type="radio" id="Életmód" name="rovatok" value="Életmód">
-					<label class="bubble" for="Életmód">Lifestyle</label>
+					<input type="radio" id="lifestyle" name="rovatok" value="lifestyle">
+					<label class="bubble" for="lifestyle">Lifestyle</label>
 				</li>
 				<li class="navigation__item">
-					<input type="radio" id="Egyéb" name="rovatok" value="Egyéb">
-					<label class="bubble" for="Egyéb">Tuják mögött</label>
+					<input type="radio" id="tujakmogott" name="rovatok" value="tujakmogott">
+					<label class="bubble" for="tujakmogott">Tuják mögött</label>
 				</li>
 				<li class="navigation__item">
-					<input type="radio" id="Archív" name="rovatok" value="Archív">
-					<label class="bubble" for="Archív">Déjà vu</label>
+					<input type="radio" id="dejavu" name="rovatok" value="dejavu">
+					<label class="bubble" for="dejavu">Déjà vu</label>
 				</li>
 				<div class="navigation__line"></div>
 			</ul>
@@ -59,7 +59,7 @@
 	<main>
 		<!-- cards -->
 		<div class="wrapper">
-			<div class="card" data-category="Iskolánkról">
+			<div class="card" data-category="whatsupkfg">
 				<div class="card__container card__container--closed">
 					<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
 						<defs>
@@ -68,31 +68,91 @@
 								<circle class="clip" cx="960" cy="250" r="992"></circle>
 							</clipPath>
 						</defs>
-						<image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="img/a.jpg"></image>
+						<image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="img/thumbnails/a.jpg"></image>
 					</svg>
 					<div class="card__content">
 						<i class="card__btn-close fa fa-times"></i>
 						<div class="card__caption">
-							<h2 class="card__title">Tristan and Isolde</h2>
-							<p class="card__subtitle">A modern day love story</p>
+							<h2 class="card__title">Fotókiállítás a Karinthyban</h2>
+							<p class="card__subtitle">Interjú Váradi Emese tanárnővel</p>
 						</div>
 						<div class="card__copy">
 							<div class="meta">
-								<img class="meta__avatar" src="img/authors/1.png" alt="author01" />
-								<span class="meta__author">Gerry Sutherland</span>
-								<span class="meta__date">06/19/2015</span>
+								<img class="meta__avatar" src="img/authors/borbely_denes.jpg" width="40" height="40" alt="author denes borbely" /> 
+								<span class="meta__author">Borbély Dénes</span>
+								<span class="meta__date">2022.04.21</span>
 							</div>
-							<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
-							<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
-							<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
-							<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
-							<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
-							<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
+							<p>
+								Az elmúlt hónapokban számos karinthys diák fotóit csodálhattuk meg az aulában. A kiállítást Váradi 
+								Emese tanárnő szervezte. A képek közül némelyik iskolai projekthez készült, mások hobbiból készült 
+								képeikkel neveztek be, egy rendkívül változatos kiállítást hozva létre. Fel is tettünk vele kapcsolatban 
+								néhány kérdést a tanárnőnek, amiknek köszönhetően betekintést nyerhettünk a színfalak mögé, és immár más 
+								fényben láthatjuk a kiállított műveket.
+							</p>
+							<p class="interview__question">
+								Kedves Tanárnő! Tudna egy kicsit mesélni a kiállításról, hogy mi is ez, és honnan jött az ötlet a megrendezésére?
+							</p>
+							<p class="interview__answer">
+								A tavalyi év során, amikor online tanítás volt, akkor február másodikán, hagyományosan azon a 
+								napon, amikor a medve kijön a barlangjából és meglátja az árnyékát vagy nem, azt gondoltam, hogy 
+								fontos lenne foglalkoznunk ezzel a fény-árnyék jelenséggel, és kitaláltam egy fotós feladatot, amit 
+								a Classroomba feltöltöttem, és több osztállyal is lejátszottuk ezt a fényvadászatot. A kompozíciós 
+								szabályokat átvéve és a fotótörténet vizsgálata után szabad képalkotásba fogtunk, és egyik-másik 
+								osztálynál olyan jól sikerültek ezek a képek, hogy kedvet kaptam folytatni a feladatot. Ez azt 
+								jelentette, hogy fotósorozatokat kértem a diákoktól, amikkel meg lehetett mutatni érzelmeket, vagy 
+								valamilyen történést, és ezekből is nagyon szép feladatokat kaptam. Én akkor láttam, hogy rengeteg 
+								virtuális kiállításra nyílt lehetőségünk, és arra gondoltam, a szép képek begyűjtése után, hogy 
+								milyen jó lenne, ha ezt megmutatnám az iskolának, és megpróbálkoztam azzal, hogy csináljak egy 
+								virtuális kiállítást, csak akkor még nem ment. Viszont már augusztusban tudtam, hogy amikor 
+								visszajövünk a suliba, ezeket a képeket szeretném egy élő kiállításban megmutatni. Az iskolától 
+								kaptam egy kisebb összeget arra, hogy felnagyítsam a fotókat, és mivel az iskolánkban működik a 
+								fotósszakkör, megkérdeztem őket, hogy mi lenne, ha az ő kis fotóik is bekerülnének, és akkor egy 
+								nagyobb kiállítás születhetne ebből.
+							</p>
+							<p class="interview__question">
+								Mi volt a célja a kiállításnak, kit szeretne inspirálni a tanárnő?
+							</p>
+							<p class="interview__answer">
+								Arra akartam felhívni a figyelmet, hogy egy csendes szemlélő és a tudatos képalkotás miben más. Hogy 
+								érdemes ezeket a kompozíciókat megnézni, érdemes azon elgondolkodni, hogy valaki vajon miért így 
+								fotózott, vagy hogy az a pillanat, amit megragadott, miért volt fontos számára, és azt gondoltam, hogy 
+								ha ezt így a folyosón, szünetekben, jó kedvetekben nézitek, akkor a következő képalkotásnál, a 
+								következő kattintásnál ti is átgondoljátok, hogy lehet egy más szemszögből, egy más nézőpontból 
+								elkészíteni a többit. Arról nem is beszélve, hogy én rendkívül büszke vagyok a diákokra, és örülök, 
+								ha más tanár is észreveszi, hogy mikre képesek egyáltalán. Én mindig csinálok az elkészült művekből 
+								valamilyen kisebb vagy nagyobb kiállítást, általában a szakkörösök munkáiból, de ez most tényleg egy 
+								nagy lélegzetvételű dolog lett annak köszönhetően, hogy sikerült novemberben pályázni még pénzekre, 
+								és így még több képet tudtunk bevenni.
+							</p>
+							<p class="interview__question">
+								Gondolt arra, hogy ennek az iskolán kívül is lehetne jövője, hogy valamikor a nagyközönség is láthatná ezeket a képeket?
+							</p>
+							<p class="interview__answer">
+								Igen, szó is volt róla, hogy a helyi múzeum szívesen befogadná, mert őket abszolút érdekli a fiatalok 
+								látásmódja. Én azt szeretem, hogyha egy munka láthatóvá válik, ha már elkészült és van mögötte akarás, alkotói vágy.
+							</p>
+							<p class="interview__question">
+								A tanárnőnek voltak kedvenc képei a kiállításról, tudna egy párat választani?
+							</p>
+							<p class="interview__answer">
+								Nekem nagyon sok kedvenc képem van ezek között, nagyon nehéz választani, gyakorlatilag szeptember óta 
+								folyamatos válogatásban voltam a képeket tekintve, de akiről tudom, hogy jó lenne, ha foglalkozna a 
+								továbbiakban a fotózással, az mindenképpen Masa Júlia, mert azt hiszem, hobbiból fotózgat, de neki a 
+								kompozíciós képessége, a látásmódja, a megfogalmazása nagyon lírai, nagyon belülről jön, az ő munkái 
+								megszólítják az embert, de nagyon izgalmasak Erdő Zolinak a fénykísérletei is. Tonyónak [Horváth Antal] 
+								a LEGO-s sorozata is nagyon jó a kirekesztésről, és aztán persze a fotósok közül imádom Bulcsúnak a 
+								dögevőjét, de ami ilyen technikai érdekesség, az pedig Becker Pannának a munkája. És nekem még kedvencem 
+								volt Lovas Jázminnak a Balatonos munkája, a lírai lányok a vízben, az is nagyon jó témaválasztás és szép, 
+								tele van olyan kísérletekkel, hogy hogyan tudják a fényt tetten érni. De eszembe jut még Fidu [Fidan Sedova], 
+								akinek szintén gyönyörű képei vannak, nagyon csendesek, nagyon egyszerűek, de közben gyönyörű megfogalmazásban, 
+								a legújabb felfedezett pedig Molnár Dorina, akinek nem is tudom, honnan voltak ilyen képi előzményei, hogy 
+								ezeket a képeket ott így megcsinálta. Szóval sok-sok kedvenc kép van.
+							</p>				
 						</div>
-					</div>
+				</div>
 				</div>
 			</div>
-			<div class="card" data-category="Ajánló">
+			<div class="card" data-category="nekunktetszett">
 				<div class="card__container card__container--closed">
 					<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
 						<defs>
@@ -101,7 +161,7 @@
 								<circle class="clip" cx="960" cy="250" r="992"></circle>
 							</clipPath>
 						</defs>
-						<image clip-path="url(#clipPath2)" width="1920" height="500" xlink:href="img/b.jpg"></image>
+						<image clip-path="url(#clipPath2)" width="1920" height="500" xlink:href="img/thumbnails/b.jpg"></image>
 					</svg>
 					<div class="card__content">
 						<i class="card__btn-close fa fa-times"></i>
@@ -125,7 +185,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="card" data-category="Életmód">
+			<div class="card" data-category="lifestyle">
 				<div class="card__container card__container--closed">
 					<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
 						<defs>
@@ -134,7 +194,7 @@
 								<circle class="clip" cx="960" cy="250" r="992"></circle>
 							</clipPath>
 						</defs>
-						<image clip-path="url(#clipPath3)" width="1920" height="500" xlink:href="img/c.jpg"></image>
+						<image clip-path="url(#clipPath3)" width="1920" height="500" xlink:href="img/thumbnails/c.jpg"></image>
 					</svg>
 					<div class="card__content">
 						<i class="card__btn-close fa fa-times"></i>
@@ -158,172 +218,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="card" data-category="Életmód">
-				<div class="card__container card__container--closed">
-					<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
-						<defs>
-							<clipPath id="clipPath4">
-								<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
-								<circle class="clip" cx="960" cy="250" r="992"></circle>
-							</clipPath>
-						</defs>
-						<image clip-path="url(#clipPath4)" width="1920" height="500" xlink:href="img/d.jpg"></image>
-					</svg>
-					<div class="card__content">
-						<i class="card__btn-close fa fa-times"></i>
-						<div class="card__caption">
-							<h2 class="card__title">Food sources</h2>
-							<p class="card__subtitle">What will we eat in 30 years?</p>
-						</div>
-						<div class="card__copy">
-							<div class="meta">
-								<img class="meta__avatar" src="img/authors/4.png" alt="author04" />
-								<span class="meta__author">Lena Bestofos</span>
-								<span class="meta__date">06/14/2015</span>
-							</div>
-							<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
-							<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
-							<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
-							<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
-							<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
-							<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card" data-category="Egyéb">
-				<div class="card__container card__container--closed">
-					<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
-						<defs>
-							<clipPath id="clipPath5">
-								<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
-								<circle class="clip" cx="960" cy="250" r="992"></circle>
-							</clipPath>
-						</defs>
-						<image clip-path="url(#clipPath5)" width="1920" height="500" xlink:href="img/e.jpg"></image>
-					</svg>
-					<div class="card__content">
-						<i class="card__btn-close fa fa-times"></i>
-						<div class="card__caption">
-							<h2 class="card__title">Swimming in the ocean</h2>
-							<p class="card__subtitle">A Makrel's story</p>
-						</div>
-						<div class="card__copy">
-							<div class="meta">
-								<img class="meta__avatar" src="img/authors/5.png" alt="author05" />
-								<span class="meta__author">Michaela Walters</span>
-								<span class="meta__date">06/11/2015</span>
-							</div>
-							<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
-							<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
-							<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
-							<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
-							<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
-							<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
-						</div>
-					</div>
-				</div>
-			</div>	
-			<div class="card" data-category="Interjú">
-				<div class="card__container card__container--closed">
-					<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
-						<defs>
-							<clipPath id="clipPath6">
-								<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
-								<circle class="clip" cx="960" cy="250" r="992"></circle>
-							</clipPath>
-						</defs>
-						<image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="img/e.jpg"></image>
-					</svg>
-					<div class="card__content">
-						<i class="card__btn-close fa fa-times"></i>
-						<div class="card__caption">
-							<h2 class="card__title">Swimming in the ocean</h2>
-							<p class="card__subtitle">A Makrel's story</p>
-						</div>
-						<div class="card__copy">
-							<div class="meta">
-								<img class="meta__avatar" src="img/authors/5.png" alt="author05" />
-								<span class="meta__author">Michaela Walters</span>
-								<span class="meta__date">06/11/2015</span>
-							</div>
-							<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
-							<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
-							<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
-							<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
-							<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
-							<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card" data-category="Egyéb">
-				<div class="card__container card__container--closed">
-					<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
-						<defs>
-							<clipPath id="clipPath7">
-								<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
-								<circle class="clip" cx="960" cy="250" r="992"></circle>
-							</clipPath>
-						</defs>
-						<image clip-path="url(#clipPath7)" width="1920" height="500" xlink:href="img/d.jpg"></image>
-					</svg>
-					<div class="card__content">
-						<i class="card__btn-close fa fa-times"></i>
-						<div class="card__caption">
-							<h2 class="card__title">Food sources</h2>
-							<p class="card__subtitle">What will we eat in 30 years?</p>
-						</div>
-						<div class="card__copy">
-							<div class="meta">
-								<img class="meta__avatar" src="img/authors/4.png" alt="author04" />
-								<span class="meta__author">Lena Bestofos</span>
-								<span class="meta__date">06/14/2015</span>
-							</div>
-							<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
-							<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
-							<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
-							<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
-							<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
-							<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card" data-category="Iskolánkról">
-				<div class="card__container card__container--closed">
-					<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
-						<defs>
-							<clipPath id="clipPath8">
-								<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
-								<circle class="clip" cx="960" cy="250" r="992"></circle>
-							</clipPath>
-						</defs>
-						<image clip-path="url(#clipPath8)" width="1920" height="500" xlink:href="img/d.jpg"></image>
-					</svg>
-					<div class="card__content">
-						<i class="card__btn-close fa fa-times"></i>
-						<div class="card__caption">
-							<h2 class="card__title">Food sources</h2>
-							<p class="card__subtitle">What will we eat in 30 years?</p>
-						</div>
-						<div class="card__copy">
-							<div class="meta">
-								<img class="meta__avatar" src="img/authors/4.png" alt="author04" />
-								<span class="meta__author">Lena Bestofos</span>
-								<span class="meta__date">06/14/2015</span>
-							</div>
-							<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
-							<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
-							<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
-							<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
-							<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
-							<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		<!-- /cards -->
 		</div>
 	</main>
 
